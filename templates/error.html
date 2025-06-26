@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エラー - PocketSign MynaConnect デモアプリ</title>
+    <link rel="stylesheet" href="/common.css">
+</head>
+<body>
+    <h1 class="error">エラーが発生しました</h1>
+    
+    <div class="error-box">
+        <h2>{{.Title}}</h2>
+        <p>{{.Message}}</p>
+    </div>
+
+    {{if .Details}}
+    <div class="error-details">
+        {{.Details}}
+    </div>
+    {{end}}
+
+    <a href="/" class="home-link">トップページに戻る</a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本人確認 - PocketSign MynaConnect デモアプリ</title>
+    <link rel="stylesheet" href="/common.css">
+</head>
+<body>
+    <h1 class="warning">本人確認</h1>
+    
+    <div class="info-message">
+        <h2>本人確認情報の表示</h2>
+        <p><strong>※ これはデモアプリです。</strong></p>
+        <p>PocketSign MynaConnectから取得した本人確認情報を表示しています。</p>
+        <p><strong>実際のプロダクト開発では：</strong><br>
+           ここで取得した情報がWebアプリケーションのアカウントの人物の情報と一致するかどうかを確認する処理を実装してください。<br>
+           例：氏名、住所、生年月日などの照合処理</p>
+    </div>
+
+    <div class="identity-box">
+        <h2>確認情報</h2>
+        <pre class="json-display">{{.IdentityJSON}}</pre>
+    </div>
+
+    <form action="/verify-identity" method="post" class="button-group">
+        <button type="submit" class="verify-button continue">
+            続ける
+        </button>
+    </form>
+</body>
+</html>

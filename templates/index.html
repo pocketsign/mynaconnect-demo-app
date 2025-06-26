@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketSign MynaConnect デモアプリ</title>
+    <link rel="stylesheet" href="/common.css">
+</head>
+<body>
+    <h1>PocketSign MynaConnect デモアプリケーション</h1>
+    
+    <div class="info-box">
+        <h2>このデモアプリについて</h2>
+        <p>このアプリケーションは、PocketSign MynaConnectを使った自己情報取得API連携のデモです。</p>
+        <p>「自己情報取得を開始」ボタンをクリックすると、PocketSign MynaConnectを通じてマイナポータルから自己情報を取得するフローが開始されます。</p>
+    </div>
+
+    <h2>自己情報取得フローを開始</h2>
+    <p>下記のボタンをクリックすると、PocketSign MynaConnectに遷移します。</p>
+    
+    <a href="/start" class="start-button">自己情報取得を開始</a>
+
+    <div class="info-box" style="margin-top: 40px;">
+        <h3>処理の流れ</h3>
+        <ol>
+            <li>「自己情報取得を開始」をクリック</li>
+            <li>PocketSign MynaConnectにリダイレクトされます</li>
+            <li>PocketSign MynaConnectで操作を行います</li>
+            <li>完了後、このアプリに戻ってきます</li>
+            <li>アプリは本人確認情報を取得、確認し、PocketSign MynaConnectに検証結果を送信します</li>
+            <li>PocketSign MynaConnectにリダイレクトされます</li>
+            <li>PocketSign MynaConnectで操作を行います</li>
+            <li>完了後、このアプリに戻ってきます</li>
+            <li>アプリは自己情報を取得し、表示します</li>
+        </ol>
+    </div>
+</body>
+</html>

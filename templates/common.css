@@ -1,0 +1,199 @@
+/* 共通スタイル */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+h1.success {
+    border-bottom-color: #28a745;
+}
+
+h1.warning {
+    border-bottom-color: #ffc107;
+}
+
+h1.error {
+    border-bottom-color: #dc3545;
+}
+
+/* ボタンスタイル */
+.button, .start-button, .verify-button, .home-link {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button, .button.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.start-button:hover, .button.primary:hover {
+    background-color: #0056b3;
+}
+
+.home-link, .button.secondary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+}
+
+.home-link:hover, .button.secondary:hover {
+    background-color: #0056b3;
+}
+
+/* メッセージボックス */
+.message, .info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.message.error, .error-box {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.message.success, .success-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.message.warning, .info-message {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+/* 結果表示 */
+.result-box, .identity-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.result-item, .identity-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+}
+
+.result-label, .identity-label {
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 5px;
+}
+
+.result-value, .identity-value {
+    color: #212529;
+    word-break: break-word;
+}
+
+/* エラー詳細 */
+.error-details {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* ローディング */
+.loading {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 本人確認ボタン */
+.button-group {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.verify-button {
+    margin: 0 10px;
+}
+
+.verify-button.continue {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+.verify-button.continue:hover {
+    background-color: #0056b3;
+}
+
+/* コードブロック */
+pre {
+    background-color: #f1f3f5;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* JSON表示 */
+.json-display {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    max-height: 400px;
+    overflow-y: auto;
+    color: #333;
+}
+
+/* パース済みデータ項目 */
+.parsed-item {
+    margin-bottom: 20px;
+}
+
+.parsed-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #495057;
+    font-size: 16px;
+}
